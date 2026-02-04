@@ -1,0 +1,26 @@
+{
+    "enabled_groups": {
+        "description": "启用回复功能的群聊列表",
+        "type": "list",
+        "hint": "只有在这个列表中的群聊才会启用回复功能，如果为空则不启用回复功能",
+        "default": []
+    },
+    "servers": {
+        "description": "群友列表",
+        "type": "list",
+        "hint": "配置需要回复的群友",
+        "default": []
+    },
+    "enable_whitelist_compare": {
+        "description": "是否开启随机复读",
+        "type": "bool",
+        "hint": "",
+        "default": false
+    },
+    "background_image_path": {
+        "description": "背景图文件夹路径",
+        "type": "string",
+        "hint": "会从这个文件夹里面随机选择一张图片作为背景图，默认路径为'~/astrbot_plugin_mc_admin/data/background_image'",
+        "default": ""
+    }
+}
