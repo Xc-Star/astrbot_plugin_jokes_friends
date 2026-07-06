@@ -5,22 +5,22 @@
         "hint": "只有在这个列表中的群聊才会启用回复功能，如果为空则不启用回复功能",
         "default": []
     },
-    "servers": {
-        "description": "群友列表",
+    "reply_template": {
+        "description": "回复模板",
         "type": "list",
-        "hint": "配置需要回复的群友",
-        "default": []
+        "hint": "配置回复的信息（qq|msg1|msg2|...）",
+        "default": ["1234567890|抓到xx了！快撅！"]
+    },
+    "reply_probability": {
+        "description": "回复概率",
+        "type": "string",
+        "hint": "配置回复的概率，1为100%",
+        "default": "0.3"
     },
     "enable_whitelist_compare": {
-        "description": "是否开启随机复读",
+        "description": "是否开启随机复读(没写)",
         "type": "bool",
         "hint": "",
         "default": false
-    },
-    "background_image_path": {
-        "description": "背景图文件夹路径",
-        "type": "string",
-        "hint": "会从这个文件夹里面随机选择一张图片作为背景图，默认路径为'~/astrbot_plugin_mc_admin/data/background_image'",
-        "default": ""
     }
 }
